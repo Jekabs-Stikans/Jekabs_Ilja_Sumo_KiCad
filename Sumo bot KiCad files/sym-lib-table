@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Custom_draws)(type Legacy)(uri "${KIPRJMOD}/Custom libs/Custom_draws.lib")(options "")(descr ""))
+  (lib (name Custom_stuff)(type Legacy)(uri "${KIPRJMOD}/Custom libs/Custom_stuff.lib")(options "")(descr ""))
+  (lib (name Switch1)(type Legacy)(uri "${KIPRJMOD}/Custom libs/Switch1.lib")(options "")(descr ""))
+)
