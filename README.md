@@ -1,1 +1,1 @@
-# Sumo_robot_KiCad_files
+# Satur sumo robota projekta KiCad failus
