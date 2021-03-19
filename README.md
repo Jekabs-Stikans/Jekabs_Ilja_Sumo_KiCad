@@ -1,5 +1,5 @@
-# Sumo robota projekts kursâ EIB2
+# Sumo robota projekts kursÄ EIB2
 
-# Darba autori Jçkabs Stikâns un Iïja Viïevka
+# Darba autori JÄ“kabs StikÄns un IÄ¼ja ViÄ¼evka
 
-Repozitorija satur visus ar ğo projektu saistîtos KiCad failus
+Repozitorija satur visus ar Å¡o projektu saistÄ«tos KiCad failus
