@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.0.1)-4*
-G04 #@! TF.CreationDate,2021-03-19T14:51:31+02:00*
-G04 #@! TF.ProjectId,Jekabs_ilja_Sumo_Test_Sensor_board,4A656B6162735F696C6A615F53756D6F,rev?*
+G04 #@! TF.CreationDate,2021-03-19T15:09:08+02:00*
+G04 #@! TF.ProjectId,Jekabs_Ilja_Sumo_Test_Sensor_board,4A656B6162735F496C6A615F53756D6F,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Copper,L1,Top,Signal*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.0.1)-4) date 2021.03.19. 14:51:31*
+G04 Created by KiCad (PCBNEW (5.0.1)-4) date 2021.03.19. 15:09:08*
 %MOMM*%
 %LPD*%
 G01*
