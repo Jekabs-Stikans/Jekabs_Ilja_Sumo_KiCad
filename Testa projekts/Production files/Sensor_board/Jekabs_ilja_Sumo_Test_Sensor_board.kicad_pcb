@@ -443,7 +443,7 @@
   (gr_arc (start 123 74) (end 123 72.5) (angle -90) (layer Edge.Cuts) (width 0.1) (tstamp 60549A06))
   (gr_arc (start 123 91) (end 121.5 91) (angle -90) (layer Edge.Cuts) (width 0.1) (tstamp 60549A05))
   (dimension 12.5 (width 0.3) (layer Cmts.User)
-    (gr_text "12,500 mm" (at 127.75 66.03045) (layer Cmts.User)
+    (gr_text "12,5 mm" (at 127.75 66.03045) (layer Cmts.User)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (feature1 (pts (xy 134 73.945448) (xy 134 67.544029)))

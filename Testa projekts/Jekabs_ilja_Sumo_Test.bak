@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:Sumo bot-cache
+LIBS:Jekabs_Ilja_Sumo_Test-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -116,46 +116,6 @@ F2 "Input" I R 3150 3450 50
 F3 "+5V" I R 3150 3300 50 
 F4 "GND" I R 3150 3600 50 
 $EndSheet
-$Sheet
-S 7350 4500 1100 600 
-U 605AB373
-F0 "Ultrasonic_sensor" 50
-F1 "Ultrasonic_sensor.sch" 50
-F2 "+5V" I L 7350 4600 50 
-F3 "GND" I L 7350 5000 50 
-F4 "Trig" I L 7350 4750 50 
-F5 "Echo" I L 7350 4850 50 
-$EndSheet
-$Comp
-L power:GND #PWR06
-U 1 1 605AC66A
-P 7250 5100
-F 0 "#PWR06" H 7250 4850 50  0001 C CNN
-F 1 "GND" H 7255 4927 50  0000 C CNN
-F 2 "" H 7250 5100 50  0001 C CNN
-F 3 "" H 7250 5100 50  0001 C CNN
-	1    7250 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR05
-U 1 1 605AC67D
-P 7250 4500
-F 0 "#PWR05" H 7250 4350 50  0001 C CNN
-F 1 "+5V" H 7265 4673 50  0000 C CNN
-F 2 "" H 7250 4500 50  0001 C CNN
-F 3 "" H 7250 4500 50  0001 C CNN
-	1    7250 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7350 4600 7250 4600
-Wire Wire Line
-	7250 4600 7250 4500
-Wire Wire Line
-	7350 5000 7250 5000
-Wire Wire Line
-	7250 5000 7250 5100
 Entry Wire Line
 	4850 3100 4950 3200
 Entry Wire Line
@@ -166,11 +126,9 @@ Entry Wire Line
 	5050 3100 5150 3200
 Wire Bus Line
 	7100 3200 7100 3650
-Wire Wire Line
-	6400 4750 7350 4750
-Text Label 7250 4750 2    50   ~ 0
+Text Label 7200 5000 2    50   ~ 0
 Trig
-Text Label 7250 4850 2    50   ~ 0
+Text Label 7200 5100 2    50   ~ 0
 Echo
 Wire Bus Line
 	3150 3450 3700 3450
@@ -336,50 +294,95 @@ F 3 "" H 5850 2400 50  0001 C CNN
 	4    5800 2450
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5350 4850 7350 4850
 Entry Wire Line
 	5250 3100 5350 3200
 Text Notes 6650 2400 0    50   ~ 0
 IR_A(0-3) - arena edge sensors\nIR_E(0-6) - close proximity IR enemy sensors (digital)\nIR_E7 - long range IR enemy sensor (analog)
 Wire Wire Line
 	4300 2650 4300 3050
+Wire Bus Line
+	4950 3200 7100 3200
+$Comp
+L Custom_draws:HC-SR04 U?
+U 1 1 605CB393
+P 7650 5050
+AR Path="/605AB373/605CB393" Ref="U?"  Part="1" 
+AR Path="/605CB393" Ref="U9"  Part="1" 
+F 0 "U9" V 8500 5250 50  0000 L CNN
+F 1 "HC-SR04" V 8500 4750 50  0000 L CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 7600 5050 50  0001 C CNN
+F 3 "" H 7600 5050 50  0001 C CNN
+	1    7650 5050
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	6400 2650 6400 4750
+	6400 2650 6400 5000
 Wire Wire Line
-	5350 2650 5350 4850
+	5350 2650 5350 5100
 Wire Wire Line
-	5700 2650 5700 3300
+	5350 5100 7250 5100
 Wire Wire Line
-	4850 2650 4850 3300
+	6400 5000 7250 5000
+$Comp
+L power:GND #PWR0109
+U 1 1 605ED709
+P 7150 5300
+F 0 "#PWR0109" H 7150 5050 50  0001 C CNN
+F 1 "GND" H 7155 5127 50  0000 C CNN
+F 2 "" H 7150 5300 50  0001 C CNN
+F 3 "" H 7150 5300 50  0001 C CNN
+	1    7150 5300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4000 2650 4000 3050
+	7250 5200 7150 5200
 Wire Wire Line
-	4100 2650 4100 3050
+	7150 5200 7150 5300
+$Comp
+L power:+5V #PWR0110
+U 1 1 605EE87B
+P 7150 4800
+F 0 "#PWR0110" H 7150 4650 50  0001 C CNN
+F 1 "+5V" H 7165 4973 50  0000 C CNN
+F 2 "" H 7150 4800 50  0001 C CNN
+F 3 "" H 7150 4800 50  0001 C CNN
+	1    7150 4800
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4200 2650 4200 3050
+	7250 4900 7150 4900
 Wire Wire Line
-	4950 2650 4950 3300
+	7150 4800 7150 4900
 Wire Wire Line
-	5050 2650 5050 3300
-Wire Wire Line
-	5250 2650 5250 3300
-Wire Wire Line
-	5150 2650 5150 3300
-Wire Wire Line
-	5800 2650 5800 3300
-Wire Wire Line
-	5900 2650 5900 3300
-Wire Wire Line
-	6100 2650 6100 3300
-Wire Wire Line
-	6000 2650 6000 3300
+	6300 2650 6300 3300
 Wire Wire Line
 	6200 2650 6200 3300
 Wire Wire Line
-	6300 2650 6300 3300
+	6000 2650 6000 3300
+Wire Wire Line
+	6100 2650 6100 3300
+Wire Wire Line
+	5900 2650 5900 3300
+Wire Wire Line
+	5800 2650 5800 3300
+Wire Wire Line
+	5150 2650 5150 3300
+Wire Wire Line
+	5250 2650 5250 3300
+Wire Wire Line
+	5050 2650 5050 3300
+Wire Wire Line
+	4950 2650 4950 3300
+Wire Wire Line
+	4200 2650 4200 3050
+Wire Wire Line
+	4100 2650 4100 3050
+Wire Wire Line
+	4000 2650 4000 3050
+Wire Wire Line
+	4850 2650 4850 3300
+Wire Wire Line
+	5700 2650 5700 3300
 Wire Bus Line
 	3700 2950 4200 2950
-Wire Bus Line
-	4950 3200 7100 3200
 $EndSCHEMATC
